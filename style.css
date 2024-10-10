@@ -1,0 +1,30 @@
+.body{
+   
+    gap:2rem;
+    height:100%
+}
+.container-dialog{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+dialog{
+    
+    
+    gap:1rem;
+    width: 50%;
+    text-align: justify;
+    align-items: center;
+   
+}
+.book-card{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: fit-content;
+    border:solid black;
+}
+h1{
+    justify-self: start;
+}

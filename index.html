@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="reset.css" rel="reset">
+    <link href="style.css" rel="stylesheet">
     <title>Library</title>
 </head>
-<body>
-    <header>
-         <h1>Rosendal´s Library</h1>
-    </header>
-
+<header>
+    <h1>Rosendal´s Library</h1>
+</header>
+<body class="body">
+    
+<div class="container-dialog">
     <button data-open-modal>Log new book</button>
     <dialog data-modal class="submitDialog">
         <h2>Log your book</h2>
         <form id="form">
             <label>Tittle</label>
-            <input id="input-title" type="text" required/>
+            <input id="input-title" type="text" required/><br>
             <label>Author</label>
-            <input id="input-author" type="text" required/>
+            <input id="input-author" type="text" required/><br>
             <label>Number of pages</label>
-            <input id="input-pages" type="text" required/>
+            <input id="input-pages" type="text" required/><br>
             <label>Read</label>
             <select>
                 <option value="default">Choose...</option>
                 <option id="input-read">Yes</option>
                 <option id="input-read">No</option>
-            </select>
+            </select><br>
 
             <button id="save-book" type="submit">Save</button>
             <button id="clear" type="button">Clear</button>
         </form>
         <button data-close-modal>Close</button>
     </dialog>
+</div>
 
-    <div id="library"></div>
+<div id="library"></div>
 
     <script src="script.js"></script>
 </body>
