@@ -7,7 +7,36 @@
     <title>Library</title>
 </head>
 <body>
-    <h1>Im a Library</h1>
+    <header>
+         <h1>Rosendal´s Library</h1>
+    </header>
+
+    <button data-open-modal>Log new book</button>
+    <dialog data-modal class="submitDialog">
+        <h2>Log your book</h2>
+        <form id="form">
+            <label>Tittle</label>
+            <input id="input-title" type="text" required/>
+            <label>Author</label>
+            <input id="input-author" type="text" required/>
+            <label>Number of pages</label>
+            <input id="input-pages" type="text" required/>
+            <label>Read</label>
+            <select>
+                <option value="default">Choose...</option>
+                <option id="input-read">Yes</option>
+                <option id="input-read">No</option>
+            </select>
+
+            <button id="save-book" type="submit">Save</button>
+            <button id="clear" type="button">Clear</button>
+        </form>
+        <button data-close-modal>Close</button>
+    </dialog>
+
+    <div id="library"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
