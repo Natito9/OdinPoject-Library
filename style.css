@@ -1,3 +1,6 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 .body{
    
     gap:2rem;
@@ -27,4 +30,14 @@ dialog{
 }
 h1{
     justify-self: start;
+    text-align: center;
+}
+.log-button{
+    width:fit-content;
+    padding: 10px;
+    background-color: rgba(23, 57, 253, 0.99);
+    border: none;
+    border-radius: 10px;
+    color:antiquewhite;
+    font-size: 1rem;
 }
